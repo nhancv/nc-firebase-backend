@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "scripts": {
+    "deploy:frontend-default": "firebase deploy --only hosting:nfireapp",
+    "deploy:frontend-dashboard": "firebase deploy --only hosting:nfireapp-dashboard"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "private": true
+}
