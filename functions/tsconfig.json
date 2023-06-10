@@ -7,11 +7,11 @@
     "sourceMap": true,
     "strict": true,
     "typeRoots": ["./node_modules/@types"],
-    "target": "es2017"
+    "target": "es2017",
+    "skipLibCheck": true,
+    "types": []
   },
   "compileOnSave": true,
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

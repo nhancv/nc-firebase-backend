@@ -13,6 +13,7 @@ https://firebase.google.com/docs/functions/get-started?gen=1st
 - Go to project -> All products ->
   - Active hosting: Hosting -> Get started -> Continue
   - Active function: Functions -> Get started -> Continue
+  - Active firestore: Firestore -> Create database -> Start in test mode -> Enable
 - Project Overview -> Add new App -> Select Web
   - Fill app nickname
   - Check to 'Also setup Firebase hosting for this app'
@@ -68,22 +69,27 @@ yarn deploy:frontend1
 yarn deploy:frontend2
 ```
 
-### Deploy cloud functions
+## Deploy cloud functions
+
+### Develop function with emulator
+
+https://firebase.google.com/docs/emulator-suite/install_and_configure
+
+Start all emulators: auth, functions, firestore, hosting, pubsub, storage
+
+```
+# at root
+export GOOGLE_APPLICATION_CREDENTIALS="path/to/key.json"
+npm start
+```
+
+### Deploy functions to cloud
 
 ```
 cd functions
 yarn install
 yarn build
 yarn deploy
-```
-
-# Config emulator
-
-https://firebase.google.com/docs/emulator-suite/install_and_configure
-
-```
-$ export GOOGLE_APPLICATION_CREDENTIALS="path/to/key.json"
-$ npm start
 ```
 
 # Create new site
