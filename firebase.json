@@ -11,13 +11,9 @@
   },
   "hosting": [
     {
-      "site": "nfireapp",
-      "public": "frontend-default/build",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "site": "nfrontend1",
+      "public": "frontend/build",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
           "source": "**",
@@ -26,13 +22,9 @@
       ]
     },
     {
-      "site": "nfireapp-dashboard",
-      "public": "frontend-dashboard/build",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "site": "nfrontend2",
+      "public": "frontend/build",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
           "source": "**",

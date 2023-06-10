@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "nfireapp"
+    "default": "nc-firebase-backend"
   }
 }
